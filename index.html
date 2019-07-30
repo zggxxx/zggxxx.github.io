@@ -161,8 +161,18 @@
       
         <p>#Apache Tomcat 服务</p>
 <h2 id="1-配置环境变量"><a href="#1-配置环境变量" class="headerlink" title="1. 配置环境变量"></a>1. 配置环境变量</h2><p>添加环境变量 “CATALINA_HOME” 路径为 apache Tomcat 服务根目录</p>
-<h2 id="2-apache-tomcat文件夹说明"><a href="#2-apache-tomcat文件夹说明" class="headerlink" title="2.apache tomcat文件夹说明"></a>2.apache tomcat文件夹说明</h2><p>bin:<br>服务器启动 startup.bat<br>服务器关闭 shutdown.bat<br>webapps:<br>存放web项目</p>
-<h2 id="3-启动-tomcat服务"><a href="#3-启动-tomcat服务" class="headerlink" title="3.启动 tomcat服务"></a>3.启动 tomcat服务</h2><p>双击 bin目录下的startup.bat<br>服务器启动后，在浏览器输入localhost:8080进入tomcat服务页面<br>双击 shutdown.bat 关闭目录</p>
+<h2 id="2-apache-tomcat文件夹说明"><a href="#2-apache-tomcat文件夹说明" class="headerlink" title="2.apache tomcat文件夹说明"></a>2.apache tomcat文件夹说明</h2><p>bin:<br>服务器启动 startup.bat<br>服务器关闭 shutdown.bat<br>webapps:<br>存放web项目<br>conf：<br>配置文件路径</p>
+<p>项目文件夹下一般有以下内容<br>1) WEB-INF<br>    web.xml：web配置文件 配置起始页面<br>    classes：<br>    lib：项目使用的架包存放文件夹</p>
+<h2 id="3-启动-tomcat服务"><a href="#3-启动-tomcat服务" class="headerlink" title="3.启动 tomcat服务"></a>3.启动 tomcat服务</h2><p>启动 bin目录下<br>startup.bat<br>服务器启动后，在浏览器输入localhost:8080进入tomcat服务页面<br>启动 shutdown.bat 关闭服务</p>
+<h2 id="6-虚拟路径配置"><a href="#6-虚拟路径配置" class="headerlink" title="6.虚拟路径配置"></a>6.虚拟路径配置</h2><p>配置项目到 webapps文件夹以外的文件<br>方式1.<br>配置文件 server.xml 在根目录下的 conf文件夹中</p>
+<p>打开server.xml 找到<host name="localhost" appbase="webapps" unpackwars="true" autodeploy="true"><br>在后面添加<br>&lt; Context docBase=”E:\apchetomcat\webapps\JspProject” path=”/JspProject”&gt;</host></p>
+<p>“docBase” 绝对路径 “path” 相对路径</p>
+<p>配置完成要重启tomcat服务</p>
+<p>方式2.<br>Conf\Catalina\localhost 路径中添加 项目名.xml</p>
+<p>xml中添加：&lt; Context docBase=”E:\mywebapps\JspProject” path=”/JspProject” &gt;</p>
+<p>相对路径：相对绝对路径下的 路径文件夹 (反斜杠)<br>绝对路径：存放项目的完整路径</p>
+<p>不需要重启tomcat服务</p>
+<p>注：还可以在Catalina\localhost 中把 项目名称.xml更该为 “ROOT.xml” 也可以识别到ROOT.xml 文件里的项目。因为ROOT为tomcat的默认项目</p>
 <h2 id="n-错误说明"><a href="#n-错误说明" class="headerlink" title="n.错误说明"></a>n.错误说明</h2><p>404 ：资源不存在<br>200：一切正常<br>403：权限不足<br>300/301：页面重定向<br>500：服务器内部错误</p>
 <hr>
 <p>#JSP</p>
