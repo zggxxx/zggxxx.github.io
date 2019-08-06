@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tomcat服务配置 &amp; JSP | X Game Base</title>
+  <title>Archives: 2019/8 | X Game Base</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Apache Tomcat 服务 1. 配置环境变量ApacheTomcat官网下载zip程序包 解压到本地添加环境变量 “CATALINA_HOME” 路径为 apache Tomcat 服务根目录 2.apache tomcat文件夹说明bin:服务器启动 startup.bat服务器关闭 shutdown.batwebapps:存放web项目conf：配置文件路径 项目文件夹下一般有以下内">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Tomcat服务配置 &amp; JSP">
-<meta property="og:url" content="http://yoursite.com/2019/07/30/Tomcat服务器配置/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="X Game Base">
+<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
 <meta property="og:site_name" content="X Game Base">
-<meta property="og:description" content="#Apache Tomcat 服务 1. 配置环境变量ApacheTomcat官网下载zip程序包 解压到本地添加环境变量 “CATALINA_HOME” 路径为 apache Tomcat 服务根目录 2.apache tomcat文件夹说明bin:服务器启动 startup.bat服务器关闭 shutdown.batwebapps:存放web项目conf：配置文件路径 项目文件夹下一般有以下内">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-06T13:11:35.440Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tomcat服务配置 &amp; JSP">
-<meta name="twitter:description" content="#Apache Tomcat 服务 1. 配置环境变量ApacheTomcat官网下载zip程序包 解压到本地添加环境变量 “CATALINA_HOME” 路径为 apache Tomcat 服务根目录 2.apache tomcat文件夹说明bin:服务器启动 startup.bat服务器关闭 shutdown.batwebapps:存放web项目conf：配置文件路径 项目文件夹下一般有以下内">
+<meta name="twitter:title" content="X Game Base">
   
     <link rel="alternative" href="/atom.xml" title="X Game Base" type="application/atom+xml">
   
@@ -141,240 +137,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Tomcat服务器配置" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Tomcat服务配置 &amp; JSP
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/08/06/在jsp中使用request.getParameter获取用户输入的内容/" class="archive-article-date">
+  	<time datetime="2019-08-06T13:49:39.650Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/08/06/在jsp中使用request.getParameter获取用户输入的内容/">Jsp 使用getParamter 获取用户输入信息</a>
     </h1>
   
 
-        
-        <a href="/2019/07/30/Tomcat服务器配置/" class="archive-article-date">
-  	<time datetime="2019-07-30T12:03:05.029Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#Apache Tomcat 服务</p>
-<h2 id="1-配置环境变量"><a href="#1-配置环境变量" class="headerlink" title="1. 配置环境变量"></a>1. 配置环境变量</h2><p>ApacheTomcat官网下载zip程序包 解压到本地<br>添加环境变量 “CATALINA_HOME” 路径为 apache Tomcat 服务根目录</p>
-<h2 id="2-apache-tomcat文件夹说明"><a href="#2-apache-tomcat文件夹说明" class="headerlink" title="2.apache tomcat文件夹说明"></a>2.apache tomcat文件夹说明</h2><p>bin:<br>服务器启动 startup.bat<br>服务器关闭 shutdown.bat<br>webapps:<br>存放web项目<br>conf：<br>配置文件路径</p>
-<p>项目文件夹下一般有以下内容<br>1) WEB-INF<br>    web.xml：web配置文件 配置起始页面<br>    classes：<br>    lib：项目使用的架包存放文件夹</p>
-<h2 id="3-启动-tomcat服务"><a href="#3-启动-tomcat服务" class="headerlink" title="3.启动 tomcat服务"></a>3.启动 tomcat服务</h2><p>启动 bin目录下<br>startup.bat<br>服务器启动后，在浏览器输入localhost:8080进入tomcat服务页面<br>启动 shutdown.bat 关闭服务</p>
-<h2 id="4-创建第一个jsp程序"><a href="#4-创建第一个jsp程序" class="headerlink" title="4.创建第一个jsp程序"></a>4.创建第一个jsp程序</h2><p>在apachetomcat\bin\webapps\ 下新建文件夹 命名为JspProject<br>在项目文件夹中添加<br>&lt;&gt;</p>
-<h2 id="6-虚拟路径配置"><a href="#6-虚拟路径配置" class="headerlink" title="6.虚拟路径配置"></a>6.虚拟路径配置</h2><p>配置项目到自定义文件夹<br>方式1.<br>配置文件 server.xml 在根目录下的 conf文件夹中</p>
-<p>打开server.xml 找到<host name="localhost" appbase="webapps" unpackwars="true" autodeploy="true"><br>在后面添加<br>&lt; Context docBase=”E:\apchetomcat\webapps\JspProject” path=”/JspProject”&gt;</host></p>
-<p>“docBase” 绝对路径 “path” 相对路径</p>
-<p>配置完成要重启tomcat服务</p>
-<p>方式2.<br>Conf\Catalina\localhost 路径中添加 项目名.xml</p>
-<p>xml中添加：&lt; Context docBase=”E:\mywebapps\JspProject” path=”/JspProject” &gt;</p>
-<p>相对路径：相对绝对路径下的 路径文件夹 (反斜杠)<br>绝对路径：存放项目的完整路径</p>
-<p>不需要重启tomcat服务</p>
-<p>注：还可以在Catalina\localhost 中把 项目名称.xml更该为 “ROOT.xml” 也可以识别到ROOT.xml 文件里的项目。因为ROOT为tomcat的默认项目</p>
-<h2 id="7-虚拟主机配置"><a href="#7-虚拟主机配置" class="headerlink" title="7.虚拟主机配置"></a>7.虚拟主机配置</h2><p>例子：设置 <a href="http://www.test.com" target="_blank" rel="noopener">www.test.com</a> 到自己的ip</p>
-<p>知识链接：域名解析<br>转换 <a href="http://www.test.com" target="_blank" rel="noopener">www.test.com</a> —–本机解析 or 互联网解析—&gt; 110.25.10.98（ip）<br>先访问本机解析：如果本地有域名映射 就不再通过互联网解析</p>
-<p>如何配之本地ip 域名映射</p>
-<p>打开 conf/server.xml</p>
-<h2 id="n-错误说明"><a href="#n-错误说明" class="headerlink" title="n.错误说明"></a>n.错误说明</h2><p>404 ：资源不存在<br>200：一切正常<br>403：权限不足<br>300/301：页面重定向<br>500：服务器内部错误</p>
-<hr>
-<p>#JSP</p>
-<h2 id="1-jsp是什么"><a href="#1-jsp是什么" class="headerlink" title="1.jsp是什么"></a>1.jsp是什么</h2><pre><code>jsp就是在html中嵌套java代码
-jsp编码设置 &lt;%@pagecharset=&quot;&quot;%&gt; 脚本编码
-pageEncoding=&quot;&quot; 浏览器读取编码
-&lt;meta charset=&quot;&quot;&gt;java代码编码
+        <div class="article-info info-on-right">
+          
+          
 
-jsp页面元素
-1. 脚本 scriptlet 
-&lt;%
-    局部变量
-    java语句
-%&gt;
-&lt;%!
-    全局变量
-    定义方法
-%&gt;
-&lt;%=
-    输出表达式
-%&gt;
-2.指令
-&lt;%@
-    page .....
-%&gt;
-language jsp页面使用的脚本语言
-import 导包 
-
-3.注释
-html:&lt;!-- --&gt;
-jsp:// /*    */
-java: &lt;%-- --%&gt;</code></pre><h2 id="JSP-9大内置对象"><a href="#JSP-9大内置对象" class="headerlink" title="JSP 9大内置对象"></a>JSP 9大内置对象</h2><pre><code>1.out  向客户端输出内容陪
-2.pageContext 
-3.request 请求对象： 存储 客户端向服务端发送的请求信息
-request 对象常见方法：
-String getParameter(String name)根据请求的字段名 key 返回字段值value
-String[] getParameterValues(String name);
-void setCharacterEncoding(&quot;编码格式&quot;); 设置请求编码 (默认编码：utf-8)
-getRequestDispatcher(&quot;b.jsp&quot;).forward(request,response); 请求转发  A 跳转到 B
-getServerContext(); 获取项目的ServletContext对象
-
-
-
-
-4.response
-提供方法 
-void addCookie(Cookie cookie);服务端向客户端增加Cookie对象
-void sendRedirect(String location)  页面跳转重定向
-
-请求转发 重定向
-请求转发地址栏不改变
-重定向地址栏改变
-
-5.session
-6.application
-7.config
-8.page
-9.exception</code></pre>
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/30/Tomcat服务器配置/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/08/06/在jsp中使用request.getParameter获取用户输入的内容/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Jsp 使用getParamter 获取用户输入信息
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/07/25/Java学习路径/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JAVA学习路线</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -397,8 +202,8 @@ void sendRedirect(String location)  页面跳转重定向
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
